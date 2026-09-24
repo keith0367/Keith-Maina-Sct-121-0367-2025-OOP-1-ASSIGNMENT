@@ -30,13 +30,11 @@ public:
         feebalance = fee;
         cout << firstname << " successfully registered for " << registeredunit << endl;
     }
-
     void displaylms() {
         cout << "LMS Dashboard" << endl;
         cout << "Student Name: " << firstname << " " << lastname << endl;
         cout << "Active Course: " << registeredunit << endl;
     }
-
     void displayportal() {
         cout << "Student Portal" << endl;
         cout << "Student ID:"<< studentid << endl;
@@ -63,7 +61,7 @@ public:
 
 int main(int argc, char** argv) {
     unit unitobject;
-    unitobject.unitcode ="ICS2101";
+    unitobject.unitcode ="DIT0301";
     unitobject.unittitle ="Object Oriented Programming";
     unitobject.unitfee =15000;
 
@@ -81,7 +79,7 @@ int main(int argc, char** argv) {
     studentobject.registerunit(unitobject.unittitle, unitobject.unitfee);
 
     studentobject.displaylms();
-
+    
     cout << "LECTURER GRADING" << endl;
     lecturerobject.entermarks(studentobject, 25, 60);
 
